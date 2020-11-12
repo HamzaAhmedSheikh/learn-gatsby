@@ -1,24 +1,16 @@
-exports.createPages = async function ({ actions}) {
+// Implement the Gatsby API “onCreatePage”. This is
+// called after every page is created.
 
-    actions.createPage({
-        path: "my-dynamic-page",
-        component: require.resolve(`./src/templates/dynamic-page.tsx`),
-        context: { 
-            // Data passed to context is available
-            // in pageContext props of the template component
-            name: "Hamza",
-            age: 20
-         },
-    });
-
-    actions.createPage({
-        path: "my-dynamic-page2",
-        component: require.resolve(`./src/templates/dynamic-page.tsx`),
-        context: { 
-            // Data passed to context is available
-            // in pageContext props of the template component
-            name: "Ahmed",
-         },
-    });
-    console.log("End of Gatsby Node File");
-}
+exports.onCreatePage = async ({ page, actions }) => {
+    const { createPage } = actions
+  
+    // Only update the `/app` page.
+    if (page.path.match(/^\/app/)) {
+      // page.matchPath is a special key that's used for matching pages
+      // with corresponding routes only on the client.
+      page.matchPath = "/app/*"
+  
+      // Update the page.
+      createPage(page)
+    }
+  }
