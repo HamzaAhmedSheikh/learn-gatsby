@@ -1,3 +1,8 @@
 .cache
 node_modules
 public
+
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
