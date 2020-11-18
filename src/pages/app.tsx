@@ -20,13 +20,13 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
      </Router> */}
      <div> Hello World Hamza </div>
      <br /> 
-     <div> {data.allContentfulBlogPost.edges[0].node.title} </div>
+     {/* <div> {data.allContentfulBlogPost.edges[0].node.title} </div>
      <div> {data.allContentfulBlogPost.edges[0].node.publicationDate} </div>
      <div> {data.allContentfulBlogPost.edges[0].node.content.raw} </div>
       <br /> <br />
      <div> {data.allContentfulBlogPost.edges[1].node.title} </div>
      <div> {data.allContentfulBlogPost.edges[1].node.publicationDate} </div>
-     <div> {data.allContentfulBlogPost.edges[1].node.content.raw} </div>
+     <div> {data.allContentfulBlogPost.edges[1].node.content.raw} </div> */}
     </Layout> 
 
    )      
@@ -34,18 +34,18 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
  export default App;
 
- export const query = graphql`
-    query {
-      allContentfulBlogPost {
-        edges {
-          node {
-            title
-            publicationDate
-            content {
-              raw
-            }
-          }
-        }
-      }
-    }
- `
+//  export const query = graphql`
+//     query {
+//       allContentfulBlogPost {
+//         edges {
+//           node {
+//             title
+//             publicationDate
+//             content {
+//               raw
+//             }
+//           }
+//         }
+//       }
+//     }
+//  `

@@ -1,0 +1,57 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\hamza\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @contentfull/rich-text-types
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Users\hamza\AppData\Local\Microsoft\WindowsApps;C:\Users\hamza\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hamza\AppData\Roaming\npm;C:\Users\hamza\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\MongoDB\Server\4.2\bin;C:\Users\hamza\AppData\Local\GitHubDesktop\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26)
+
+npm manifest: 
+  {
+    "name": "gatsby-starter-minimal",
+    "version": "1.0.0",
+    "private": true,
+    "description": "A Gatsby starter for running recipes and adding themes. It does not come with any pages.",
+    "author": "Laurie Barth",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "clean": "gatsby clean"
+    },
+    "license": "0BSD",
+    "dependencies": {
+      "@contentful/rich-text-react-renderer": "^14.1.2",
+      "@material-ui/core": "^4.11.0",
+      "@material-ui/styles": "^4.10.0",
+      "dotenv": "^8.2.0",
+      "gatsby": "^2.25.3",
+      "gatsby-plugin-material-ui": "^2.1.10",
+      "gatsby-source-contentful": "^4.0.0",
+      "mdi-material-ui": "^6.20.0",
+      "moment": "^2.29.1",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-moment": "^1.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
