@@ -1,6 +1,8 @@
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
+
+
 const handler = async (event) => {
-  try {
+  try {    
     const subject = event.queryStringParameters.name || 'World'
     return {
       statusCode: 200,
