@@ -18,7 +18,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
       <ClientPage1 path="/page1" />
       <Default path="/" />
      </Router> */}
-     <div> Hello World Hamza </div>
+     <div> Hello World Hamza </div>     
      <br /> 
      {/* <div> {data.allContentfulBlogPost.edges[0].node.title} </div>
      <div> {data.allContentfulBlogPost.edges[0].node.publicationDate} </div>
