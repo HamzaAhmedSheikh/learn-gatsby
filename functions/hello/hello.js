@@ -4,7 +4,7 @@ const handler = async (event) => {
     const subject = event.queryStringParameters.name || 'World'
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: `Hello ${subject} and hello Hamza` }),
+      body: JSON.stringify({ message: `Hello ${subject} update on netlify` }),
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },
       // isBase64Encoded: true,
