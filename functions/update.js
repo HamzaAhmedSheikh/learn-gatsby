@@ -3,6 +3,8 @@
 const faunadb = require("faunadb")
   q = faunadb.query
 
+  require('dotenv').config()
+
 const handler = async (event) => {
   try {
     const client = new faunadb.Client({ secret: process.env.DB_SECRET });    

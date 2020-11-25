@@ -3,6 +3,8 @@
 const faunadb = require("faunadb")
   q = faunadb.query
 
+  require('dotenv').config()
+
 const handler = async (event) => {
   try {
     if (event.httpMethod !== "POST") {
